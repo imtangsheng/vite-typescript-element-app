@@ -30,3 +30,57 @@ next
   yarn
   yarn dev
 ```
+
+## 1.1
+修改开发端口
+vite.config.ts
+```
+export default defineConfig({
+  plugins: [vue()],
+  server: {
+    host: '0.0.0.0',
+    port: 41024
+  }
+})
+```
+更改标题和图标
+index.html
+
+
+## 1.2 在项目中使用 Element Plus。
+```
+yarn add element-plus
+// main.ts
+```
+完整引入#
+https://element-plus.gitee.io/zh-CN/guide/quickstart.html
+
+
+## 1.3 路由vue-router的使用
+
+安装vue-router
+```
+yarn add vue-router@4
+```
+安装完成后在src下创建router文件夹和index.ts, 文件结构如上边的图。
+
+路径别名配置
+我们在vite.config.ts, 加入以下内容：
+
+```ts
+import path from "path"
+
+  resolve: {
+    alias: {
+      '@':path.resolve(__dirname,"src")
+    }
+  }
+```
+然后在tsconfig.json，加入以下内容:
+
+```
+  "paths": {"@/*":["src/*"]}
+```
+
+首先在main.ts中引入
+然后修改App.vue如下内容
