@@ -100,13 +100,4 @@ export async function login(data:ApiTypes.ILoginParams): Promise<boolean>{
     return res.status;
 }
 
-export class User {
-    // 用户登出 
-    async logout() {
-        const res = await http.get('/user/logout');
-        return res;
-    }
-
-}
-
 export default service;
