@@ -1,6 +1,6 @@
 <template>
-  <div class="page">
-    Home
+  <div>
+    <el-button type="info">SVG 本地图标 </el-button>
   </div>
 </template>
 

@@ -21,7 +21,8 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Other配置src文件别名 */
-    "paths": {"@/*": ["src/*"]},
+    "baseUrl": "./", // 解析非相对模块名的基准目录，默认当前目录
+    "paths": {"@/*": ["src/*"]}, // 路径映射条目，相当于baseUrl
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -78,9 +78,15 @@ import path from "path"
 ```
 然后在tsconfig.json，加入以下内容:
 
-```
-  "paths": {"@/*":["src/*"]}
-```
+``` 
+"compilerOptions": {
+    "baseUrl": "./", // 解析非相对模块名的基准目录，默认当前目录
+    "paths": {"@/*": ["src/*"]}, // 路径映射条目，相当于baseUrl
 
-首先在main.ts中引入
-然后修改App.vue如下内容
+```
+## 1.4 安装 Axios:
+```
+// http请求
+yarn add axios
+
+```
