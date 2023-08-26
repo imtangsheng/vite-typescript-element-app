@@ -1,5 +1,5 @@
 // src/lang/index.ts
-import { createI18n } from 'vue-i18n'
+import { createI18n } from 'vue-i18n/dist/vue-i18n.cjs'
 import enLocale from './package/en'
 import zhCnLocale from './package/zh-cn'
 
