@@ -2,6 +2,7 @@
   <div class="app-layout">
     <el-container>
       <el-header>
+        Header
         {{ user.name }}
         <SvgIcon name="down"></SvgIcon>
         <span>{{ $t("HeaderBar.home") }}</span>
