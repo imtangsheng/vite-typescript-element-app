@@ -113,3 +113,21 @@ pnpm run dev
 pnpm update
 
 ```
+
+## 1.6 Pinia状态管理
+
+https://pinia.vuejs.org/zh/core-concepts/
+
+```
+pnpm install pinia
+
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import App from './App.vue'
+
+const pinia = createPinia()  //必须使用变量，否则报错
+const app = createApp(App)
+
+app.use(pinia)
+app.mount('#app')
+```

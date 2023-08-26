@@ -2,7 +2,7 @@
   <div class="app-layout">
     <el-container>
       <el-header>
-        Header
+        {{ user.name }}
         <span>{{ $t("HeaderBar.home") }}</span>
       </el-header>
 
@@ -25,8 +25,11 @@
 </template>
 
 <script setup lang="ts">
+import { useUserStore } from "@/store";
 
+const user = useUserStore();
 
+console.log(user.name);
 </script>
 <style scoped>
 .app-layout {
