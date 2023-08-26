@@ -131,3 +131,10 @@ const app = createApp(App)
 app.use(pinia)
 app.mount('#app')
 ```
+
+## 整合 SVG 图标
+
+```
+pnpm install -D fast-glob //GitHub的网站缺少导致报错
+pnpm install -D vite-plugin-svg-icons
+```

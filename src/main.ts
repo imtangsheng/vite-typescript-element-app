@@ -6,6 +6,9 @@ import App from './App.vue'
 import router from './router/index.ts'
 import i18n from "./lang/index.ts"
 import { createPinia } from 'pinia'
+
+import 'virtual:svg-icons-register'
+
 const pinia = createPinia()
 
 const app = createApp(App)

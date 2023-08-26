@@ -3,6 +3,7 @@
     <el-container>
       <el-header>
         {{ user.name }}
+        <SvgIcon name="down"></SvgIcon>
         <span>{{ $t("HeaderBar.home") }}</span>
       </el-header>
 
@@ -26,6 +27,7 @@
 
 <script setup lang="ts">
 import { useUserStore } from "@/store";
+import SvgIcon from '@/components/SvgIcon.vue'
 
 const user = useUserStore();
 
