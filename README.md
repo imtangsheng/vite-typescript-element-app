@@ -82,7 +82,7 @@ import path from "path"
 "compilerOptions": {
     "baseUrl": "./", // 解析非相对模块名的基准目录，默认当前目录
     "paths": {"@/*": ["src/*"]}, // 路径映射条目，相当于baseUrl
-
+}
 ```
 ## 1.4 安装 Axios:
 ```
@@ -100,4 +100,16 @@ yarn add vue-i18n@9
 存在问题
 无法找到模块“vue-i18n”的声明文件
 还有$t的使用也会报类型错
+```
+改为 pnpm安装解决问题
+# 安装 pnpm
+npm install pnpm -g
+# 安装依赖
+pnpm install
+# 启动运行
+pnpm run dev
 
+更新所有插件
+pnpm update
+
+```
