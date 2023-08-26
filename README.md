@@ -90,3 +90,14 @@ import path from "path"
 yarn add axios
 
 ```
+
+## 1.5 国际化支持
+
+https://vue-i18n.intlify.dev/guide/installation.html
+
+yarn add vue-i18n@9
+
+存在问题
+无法找到模块“vue-i18n”的声明文件
+还有$t的使用也会报类型错
+
